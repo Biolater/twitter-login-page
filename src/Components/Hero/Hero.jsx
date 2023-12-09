@@ -1,4 +1,4 @@
-import "./hero.css";
+import "./Hero.css";
 import React from 'react';
 import googleIcon from "../../assets/google.svg"
 
