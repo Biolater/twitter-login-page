@@ -1,0 +1,211 @@
+#hero {
+    background-color: black;
+    padding: 30px 0px;
+}
+
+#hero .left svg{
+    max-width: 330px;
+    width: 100%;
+}
+
+#hero .left{
+    display: flex;
+    justify-content: center;
+}
+
+#hero .right h1,
+p {
+    color: var(--whiteisher);
+}
+
+#hero .right h1 {
+    font-weight: 700;
+    letter-spacing: -1.2px;
+    line-height: 84px;
+    font-size: 64px;
+    margin: 48px 0px;
+}
+
+#hero .right p {
+    margin-bottom: 32px;
+    font-size: 31px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.button-login {
+    background-color: #fff;
+    color: black;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    padding: 0px 16px;
+    height: 40px;
+    width: 300px;
+    border-radius: 9999px;
+    justify-content: center;
+    transition: opacity .3s;
+}
+
+.button-login:hover {
+    opacity: .8;
+}
+
+.sign-up__google {
+    margin-bottom: 8px;
+}
+
+.sign-up__apple svg {
+    width: 20px;
+    height: 20px;
+}
+
+.sign-up__apple span {
+    max-width: 146.733px;
+    width: 100%;
+}
+
+.sign-up__google img {
+    width: 20px;
+    height: 20px;
+}
+
+#hero .container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(2,1fr);
+    gap: 150px;
+}
+
+.line {
+    width: 300px;
+    height: 1px;
+    background-color: #2f3336;
+    margin: 20px 0px;
+    position: relative;
+}
+
+.line::after {
+    content: "or";
+    position: absolute;
+    display: block;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: black;
+    padding: 0px 10px;
+}
+
+.create-account {
+    max-width: 300px;
+    padding: 0px 16px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9999px;
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    background-color: rgb(29, 155, 240);
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.warning {
+    margin-bottom: 20px;
+    color: rgb(113, 118, 123);
+    max-width: 300px;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 12px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 20px;
+}
+
+.warning span{
+    color: rgb(29, 155, 240);
+    cursor: pointer;
+}
+
+.warning span:hover{
+    text-decoration: underline;
+}
+
+.sign-in span{
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+.sign-in button{
+    border: 1px solid #536471;
+    border-radius: 9999px;
+    max-width: 300px;
+    width: 100%;
+    height: 40px;
+    color: rgb(29, 155, 240);
+    font-size: 15px;
+    font-weight: 700;
+    background-color: transparent;
+    cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: .3s;
+}
+
+.xIcon{
+    width: 45px;
+    height: 45px;
+    fill: #fff;
+    padding-bottom: 12px;
+}
+
+.sign-in{
+    margin-top: 55px;
+}
+
+.sign-in button:hover{
+    background-color: #08141c;
+}
+
+
+@media(max-width:992px){
+    #hero .left{
+        display: none;
+    }
+    #hero .container{
+        grid-template-columns: 1fr;
+    }
+
+    #hero .right{
+        padding: 0px 66px;
+    }
+}
+
+
+@media(max-width:675px){
+    #hero .right{
+        padding: 0px 20px;
+    }
+}
+
+
+@media(max-width:500px){
+    #hero .right h1{
+        font-size: 40px;
+        line-height: unset;
+    }
+}
